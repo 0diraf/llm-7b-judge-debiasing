@@ -8,6 +8,7 @@ This repo contains a pipeline for evaluating LLM-as-a-judge strategies on pairwi
 - `generate.py` loads local Hugging Face causal language models and runs generation.
 - `metrics.py` computes agreement, tie rate, verbosity bias, and token-cost metrics.
 - `run_experiment.py` runs models and strategies, saves checkpoints, and merges results
+- `llm-debiasing.ipynb` contains the results of running the experiments, as well as EDA on the outputs.
 
 The scripts use Hugging Face models and datasets, so the first run may download model weights and dataset files. A CUDA-capable GPU is recommended. Use `--load_in_4bit` for lower-memory runs.
 
