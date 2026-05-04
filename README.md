@@ -36,7 +36,7 @@ NOTE: Strategy names were changed to be more consistent, please refer to `llm-de
 
 ## Outputs
 
-Each run writes checkpoint files under `results/<dataset>/checkpoints/<model>/`. The final merged result file is saved as:
+Each run writes checkpoint files under `results/<dataset>/checkpoints/<model>/`. The final merged result file for each model and dataset is saved as:
 
 ```text
 results/<dataset>/full_results.json
