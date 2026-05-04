@@ -1,4 +1,4 @@
-# LLM Judge Bias Experiments
+# Does LLM-as-a-Judge Debiasing Help or Hurt? An Evaluation of Debiasing Strategies on Small-scale Models
 
 This repo contains a pipeline for evaluating LLM-as-a-judge strategies on pairwise preference datasets. It compares several prompting and scoring strategies against human labels, with a focus on agreement, tie behavior, position sensitivity, verbosity bias, and token cost.
 
