@@ -26,6 +26,8 @@ Run on Chatbot Arena with a smaller sample:
 python run_experiment.py --dataset chatbot_arena --n_pairs 1000 --models qwen mistral olmo
 ```
 
+NOTE: Strategy names were changed to be more consistent, please refer to `llm-debiasing.ipynb` for information.
+
 Run Qwen 14B in 4-bit mode:
 
 ```bash
