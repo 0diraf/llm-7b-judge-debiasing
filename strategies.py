@@ -1,7 +1,7 @@
 """
 All 8 judge strategies.
 
-S2, S3, and S4 are not used due to compute constraints.
+S2 (CoT), S3 (majority voting), and S4 (CoT + order-swap) are not used due to compute constraints.
 """
 
 import re
