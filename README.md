@@ -2,7 +2,6 @@
 
 This repo contains a pipeline for evaluating LLM-as-a-judge strategies on pairwise preference datasets. It compares several prompting and scoring strategies against human labels, with a focus on agreement, tie behavior, position sensitivity, verbosity bias, and token cost.
 
-
 - `data.py` loads MT-Bench human judgments and Chatbot Arena conversations from Hugging Face.
 - `strategies.py` defines judge strategies, including baseline prompting, swap-based debiasing, rubric decomposition, pointwise scoring, and forced-choice swap diagnostics.
 - `generate.py` loads local Hugging Face causal language models and runs generation.
@@ -26,13 +25,14 @@ Run on Chatbot Arena with a smaller sample:
 python run_experiment.py --dataset chatbot_arena --n_pairs 1000 --models qwen mistral olmo
 ```
 
-NOTE: Strategy names were changed to be more consistent, please refer to `llm-debiasing.ipynb` for information.
-
 Run Qwen 14B in 4-bit mode:
 
 ```bash
 python run_experiment.py --dataset mt_bench --models qwen14b --strategies S0a S5 S7 --load_in_4bit
 ```
+
+NOTE: Strategy names were changed to be more consistent, please refer to `llm-debiasing.ipynb` for information.
+
 
 ## Outputs
 
